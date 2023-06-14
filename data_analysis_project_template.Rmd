@@ -12,8 +12,6 @@ knitr::opts_chunk$set(echo = TRUE,
 
 
 
-# Student Information
-
 **Name**: Sahith
 
 
@@ -33,8 +31,6 @@ The following is the airline flight terminology to familiarize with the industry
 ## Dulles Flights Data
 
 The `flights_df` data frame is loaded below and consists of 33,433 flights from IAD (Dulles International) in 2016. The rows in this data frame represent a single flight with all of the associated features that are displayed in the table below.
-
-**Note**: If you have not installed the `tidyverse` package, please do so by going to the `Packages` tab in the lower right section of RStudio, select the `Install` button and type `tidyverse` into the prompt. If you cannot load the data, then try downloading the latest version of R (at least 4.0). The `readRDS()` function has different behavior in older versions of `R` and may cause loading issues.
 
 
 
@@ -59,28 +55,8 @@ flights_df
 # Exploratory Data Analysis
 
 
-Executives at this company have hired you as a data science consultant to evaluate their flight data and make recommendations on flight operations and strategies for minimizing flight delays.
+To evaluate flight data and make recommendations on flight operations and strategies for minimizing flight delays.
 
-You must think of **at least 8 relevant questions** that will provide evidence for your recommendations.
-
-The goal of your analysis should be discovering which variables drive the differences between flights that are early/on-time vs. flights that are delayed.
-
-Some of the many questions you can explore include:
-
--   Are flight delays affected by taxi-out time? Do certain airlines or time of 
-    year lead to greater taxi out times (i.e. traffic jams on the runways)?
-
--   Are certain times of the day or year problematic?
-
--   Are certain destination or airlines prone to delays?
-
-
-You must answer each question and provide supporting data summaries with either a summary data frame (using `dplyr`/`tidyr`) or a plot (using `ggplot`) or both.
-
-In total, you must have a minimum of 5 plots and 4 summary data frames for the exploratory data analysis section. Among the plots you produce, you must have at least 4 different types (ex. box plot, bar chart,
-histogram, heat map, etc...)
-
-Each question must be answered with supporting evidence from your tables and plots.
 
 
 ## Question 1
@@ -420,47 +396,10 @@ ggplot(data = dest_regn, mapping = aes(x = reorder(dest_airport_region, -delay_c
 
 # Summary of Results
 
-Write an executive summary of your overall findings and recommendations to the executives at Dulles Airport. Think of this section as your closing remarks of a presentation, where you summarize your key findings and make recommendations on flight operations and strategies for minimizing flight delays.
-
-Your executive summary must be written in a [professional tone](https://www.universalclass.com/articles/writing/business-writing/appropriate-tone-in-business-communications.htm), with minimal grammatical errors, and should include the following
-sections:
-
-1.  An introduction where you explain the business problem and goals of your data analysis
-
-    -   What problem(s) is this company trying to solve? Why are they important
-        to their future success?
-
-    -   What was the goal of your analysis? What questions were you 
-        trying to answer and why do they matter?
-
-
-2.  Highlights and key findings from your Exploratory Data Analysis section
-
-    -   What were the interesting findings from your analysis and
-        **why are they important for the business**?
-
-    -   This section is meant to **establish the need for your recommendations** 
-        in the following section
-        
-
-3.  Your recommendations to the company
-
-    -   Each recommendation must be supported by your data analysis results
-
-    -   You must clearly explain **why** you are making each recommendation and which results 
-        from your data analysis support this recommendation
-
-    -   You must also describe the potential business impact of your recommendation:
-
-        -   Why is this a good recommendation?
-
-        -   What benefits will the business achieve?
-      
 
 
 ## Executive Summary
 
-Please write your executive summary below. If you prefer, you can type your summary in a text editor, such as Microsoft Word, and paste your final text here.
 
 
 > Airports must accurately monitor flight departure and arrival estimates in order to maintain good operations, profitability and customer satisfaction. In the given dataset, there are many causes which can alter the estimates of flight arrivals and departures and further which effects the airport operations and profitability. It should focus more on these factors so that the operations run smoothly and efficiently.
