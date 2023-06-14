@@ -1,5 +1,5 @@
 ---
-title: "Data Analysis Project"
+title: "Flight Data Analysis"
 ---
 
 
@@ -14,21 +14,19 @@ knitr::opts_chunk$set(echo = TRUE,
 
 # Student Information
 
-**Name**: Sahith Reddy Battapuram
-**G Number**: G01337411
-
+**Name**: Sahith
 
 
 
 # Introduction
 
-This semester we will be working with a dataset of all domestic outbound flights from Dulles International Airport in 2016.
+A dataset of all domestic outbound flights from Dulles International Airport in 2016.
 
 Airports depend on accurate flight departure and arrival estimates to maintain operations, profitability, customer satisfaction, and compliance with state and federal laws. Flight performance, including departure and arrival delays must be monitored, submitted to the Federal Aviation Agency (FAA) on a regular basis, and minimized to maintain airport operations. **The FAA considered a flight to be delayed if it has an arrival delay of at least 15 minutes**.
 
-The executives at Dulles International Airport have hired you as a Data Science consultant to perform an exploratory data analysis on all domestic flights from 2016 and produce an executive summary of your key insights and recommendations to the executive team.
+To perform an exploratory data analysis on all domestic flights from 2016 and produce an executive summary of key insights and recommendations.
 
-Before you begin, take a moment to read through the following airline flight terminology to familiarize yourself with the industry: [Airline Flight Terms](https://www.myairlineflight.com)
+The following is the airline flight terminology to familiarize with the industry: [Airline Flight Terms](https://www.myairlineflight.com)
 
 
 
